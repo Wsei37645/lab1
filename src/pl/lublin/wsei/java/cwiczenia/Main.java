@@ -28,9 +28,10 @@ public class Main {
         System.out.println("------------------------------------");
 
         int x=0;
+        System.out.println("arg|\tlog2(arg)|\tsum(arg)\n");
         for (int arg=1; arg<9; arg++) {
 
-            System.out.printf( "%d\t%f\t%d\t\n",arg, Math.log(arg) / Math.log(2), x+=arg );
+            System.out.printf( " %d |\t %f|\t%d\t\n",arg, Math.log(arg) / Math.log(2), x+=arg );
         }
         System.out.println("------------------------------------");
 
