@@ -45,7 +45,12 @@ public class Main {
             if ((num1 ==  0) || (num2 == 0)) break;
             System.out.printf("Wynik dodawania %d + %d = %d%n", num1, num2, num1+num2 ) ;
         } while (true);
+        System.out.println("------------------------------------");
 
-
+        int DEC;
+        System.out.print("Podaj liczbę binarną: ");
+        DEC= input.nextInt();
+        System.out.printf("DEC= %d, BIN= %s, HEX =0x%S", DEC, Integer.toBinaryString(DEC), Integer.toHexString(DEC));
     }
+
 }
