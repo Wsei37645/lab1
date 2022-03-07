@@ -41,6 +41,6 @@ public class Main {
         num1 = input.nextInt();
         System.out.print("Podaj drugą liczbę: ");
         num2= input.nextInt();
-        System.out.printf("Wynik dodawania %d + %d = %d%n", num1, num2, num1+num2) ;
+        System.out.printf("Wynik dodawania %d + %d = %d%n", num1, num2, num1+num2 ) ;
     }
 }
