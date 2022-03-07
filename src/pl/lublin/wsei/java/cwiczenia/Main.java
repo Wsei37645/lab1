@@ -1,4 +1,5 @@
 package pl.lublin.wsei.java.cwiczenia;
+import java.util.Random;
 import java.util.Scanner;
 public class Main {
 
@@ -50,7 +51,26 @@ public class Main {
         int DEC;
         System.out.print("Podaj liczbę binarną: ");
         DEC= input.nextInt();
-        System.out.printf("DEC= %d, BIN= %s, HEX =0x%S", DEC, Integer.toBinaryString(DEC), Integer.toHexString(DEC));
+        System.out.printf("DEC= %d, BIN= %s, HEX =0x%S\n", DEC, Integer.toBinaryString(DEC), Integer.toHexString(DEC));
+        System.out.println("------------------------------------");
+
+        int[] liczby = new int[30];
+        Random rnd = new Random();
+
+        for (int i = 0; i < 30; i++)
+            liczby [i] = rnd.nextInt();
+        int mx = Integer.MIN_VALUE;
+        int mn = Integer.MAX_VALUE;
+        long avg = 0;
+
+        for (int l : liczby){
+
+            System.out.println(l);
+            if (l < mn) mn = l;
+            if (l > mx) mx = l;
+            avg += l;
+        }
+            System.out.printf ("MIN = %d, MAX = %d, AVG = %f", mn, mx, (float)avg/liczby.length);
     }
 
 }
