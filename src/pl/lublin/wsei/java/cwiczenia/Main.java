@@ -1,6 +1,7 @@
 package pl.lublin.wsei.java.cwiczenia;
 import pl.lublin.wsei.java.cwiczenia.mylib.Account;
 
+import java.io.PrintStream;
 import java.util.Random;
 import java.util.Scanner;
 public class Main {
@@ -79,6 +80,8 @@ public class Main {
         Account acc = new Account();
         acc.setName("piotr Gołabek");
         System.out.println(acc.getName());
+        System.out.printf("%s%n",Account.capitalize("stanisŁaw maruSARz"));
+        System.out.printf("%s%n",acc.translit("матеусз"));
     }
 
 }
