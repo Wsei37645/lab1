@@ -1,11 +1,14 @@
 package pl.lublin.wsei.java.cwiczenia;
+import pl.lublin.wsei.java.cwiczenia.mylib.Account;
+
 import java.util.Random;
 import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
         System.out.println("------------------------------------");
-        
+        /*
 	    System.out.println("Hello Java World");
         System.out.println("------------------------------------");
 
@@ -71,6 +74,11 @@ public class Main {
             avg += l;
         }
             System.out.printf ("MIN = %d, MAX = %d, AVG = %f", mn, mx, (float)avg/liczby.length);
+
+         */
+        Account acc = new Account();
+        acc.setName("piotr Gołabek");
+        System.out.println(acc.getName());
     }
 
 }
